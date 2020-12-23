@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  margin-bottom: 100px ;
+}
+.col_ {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 500px;
+}
+.mainHeading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.mainHeading a {
+  width: 100%;
+  color:#245C81;
+  font-family: "Raleway", sans-serif;
+  word-spacing: 1px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mainHeading p {
+  line-height: 2;
+  width: 100%;
+  font-size: 16px;
+  margin: 36px 44px 36px 44px;
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  word-spacing: 1px;
+}
+.btn {
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition-duration: 0.4s;
+  letter-spacing: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background-image: linear-gradient(315deg, #3cabc7 0%, #3e80d8 74%);
+  text-transform: uppercase;
+  color: white;
+}
+.btn:hover {
+  background-image: linear-gradient(315deg, #3cabc7 0%, #f3f8ff 74%);
+  border: 0.5px #00a3cc solid;
+  box-shadow: 0 12px 16px 0 rgba(11, 181, 233, 0.24),
+    0 17px 50px 0 rgba(0, 195, 255, 0.19);
+  color: black;
+  cursor: pointer;
+}
+
+.col_ .image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-size: contain;
+}
+.col_ .image img {
+  background-repeat: no-repeat;
+  
+  width: 90%;
+}
+/* Clear floats after the columns */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  
+}
+
+@media screen and (max-width: 800px) {
+  
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-bottom: 100px ;
+  }
+  .col_ {
+    width: 100%;
+    display: block;
+    float: right;
+    height: auto;
+    transition: 1s;
+    
+  }
+  .col_ .image img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+.row {
+    margin-bottom: 100px;
+}
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 25%;
+}
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive columns */
+
+@media screen and (max-width: 1060px) {
+    .column {
+        width: 33.333%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 0px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 0px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+}
+/* Style the counter cards */
+
+.card {
+    padding: 16px;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+img {
+    cursor: pointer;
+}
+
+h3 {
+    color: black;
+}
